@@ -61,7 +61,9 @@ intellij {
         token = System.getenv("ORG_GRADLE_PROJECT_intellijPublishToken")
     }
     compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_1_8.toString()
+        }
     }
 }
 
